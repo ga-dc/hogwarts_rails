@@ -5,12 +5,12 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <link href='https://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
-    <title>Hogwarts
+    <title>Hogwarts</title>
   </head>
   <body>
     <nav>
       <h1>Welcome to Hogwarts!</h1>
-      <h2><%= link_to "View Houses", houses_path %> | <%= link_to "View Students", student_path %> | <%= link_to "Enroll", student_path %></h2>
+      <h2><%= link_to "View Houses", houses_path %> | <%= link_to "View Students", students_path %> | <%= link_to "Enroll", students_path %></h2>
     </nav>
 
     <% yield %>
