@@ -13,8 +13,9 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @houses = House.all
     @student = Student.new(student_params)
-    @student.house_id = rand(5..8)
+    @student.house_id = rand(@houses[0][:id]..@houses[3][:id])
     @student.save!
 
     redirect_to @student
