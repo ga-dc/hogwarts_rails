@@ -5,7 +5,7 @@ class HousesController < ApplicationController
   end
 
   def show
-    @houses = Houses.all
+    @house = House.find(params[:id])
   end
 
 end
