@@ -19,6 +19,6 @@ class StudentsController < ApplicationController
 
   private
   def student_params
-    params.require(:artist).permit(:name, :img_url)
+    params.require(:student).permit(:name, :img_url)
   end
 end
