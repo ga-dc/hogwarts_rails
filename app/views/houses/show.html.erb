@@ -2,7 +2,7 @@
 <h1><%= @houses.name %></h1>
 <% @houses.students.each do |student| %>
   <div class="student">
-    <h2><%= student.name %></h2>
-    <%= image_tag student.img_url %>
+      <h2><%= student.name %></h2>
+      <%= image_tag student.img_url %>
   </div>
 <% end %>
