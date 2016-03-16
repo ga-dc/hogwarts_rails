@@ -1,7 +1,7 @@
 class StudentsController < ActionController
 
   def index
-    @student = Student.all
+    @students = Students.all
   end
 
   def show
