@@ -17,9 +17,9 @@ class StudentsController < ApplicationController
     redirect_to students_path
   end
 
-def sorting_hat
-  @spec = House.all.sample.id
-end
+  def sorting_hat
+    @spec = House.all.sample.id
+  end
 
   private
   def student_params
