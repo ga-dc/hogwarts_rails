@@ -4,8 +4,8 @@ class HousesController < ApplicationController
     @houses = House.all
   end
 
-  # def show
-  #   @houses = House.all
-  # end
+  def show
+    @houses = House.find(params[:id])
+  end
 
 end
