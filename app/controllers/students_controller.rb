@@ -3,26 +3,28 @@ class StudentsController < ApplicationController
 #index
   def index
     @students = Student.all
-    @student = Student.find(params[:id])
+    # @student = Student.find(params[:id])
   end
 
 #show
   def show
     @student = Student.find(params[:id])
-    redirect_to house_student_path(@student)
   end
+  # redirect_to house_student_path(@student)
 
 #new
   def new
-    @house = House.find(params[:id])
-    @student = @house.students.new
+    @student = Student.new
   end
+  # @house = House.find(params[:id])
+  # @student = @house.students.new
 
 #create
   def create
-    @house = House.find(params[:id])
-    @student = @house.students.create!(student_params)
+    @student = Student.create!(student_params)
   end
+  # @house = House.find(params[:id])
+  # @student = @house.students.create!(student_params)
 
 #edit
   def edit
