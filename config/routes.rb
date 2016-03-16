@@ -1,4 +1,4 @@
-Hogwarts::Application.routes.draw do
+Hogwarts.application.routes.draw do
 
   root "house#index"
   resource :house, only: [:index, :show]
