@@ -1,40 +1,48 @@
 class HousesController < ApplicationController
 
-#index
+  #index
   def index
     @houses = House.all
     @house = House.new
   end
 
-#show
+  #show
   def show
     @house = House.find(params[:id])
     @houses = House.all
   end
 
-#new
-def new
-  @house = House.new
-end
+  #new
+  def new
+    @house = House.new
+  end
 
+  #create
+  def create
+    @house = House.create!(house_params)
+  end
 
-#create
-def create
-  @house = House.create!(house_params)
+  #edit
+  def edit
+    @house = House.find(params[:id])
+  end
 
-end
+  #update
+  def update
+    @house = House.find(params[:id])
+    @house.update(house_params)
+  end
 
+  #delete
+  def destroy
+    @house = House.find(params[:id])
+    @house.destroy
+  end
 
-#edit
+  private
 
-#update
-
-#delete
-
-private
-
-def house_params
-  params.require(:house).permit(:name, :image_url)
-end
+  def house_params
+    params.require(:house).permit(:name, :image_url)
+  end
 
 end

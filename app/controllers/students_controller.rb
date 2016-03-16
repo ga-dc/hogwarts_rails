@@ -21,7 +21,10 @@ class StudentsController < ApplicationController
 
 #create
   def create
-    @student = Student.create!(student_params)
+    @student = Student.new(student_params)
+    @student.house_id = House.all.sample.id
+    @student.save!
+    redirect_to student_path(@student)
   end
   # @house = House.find(params[:id])
   # @student = @house.students.create!(student_params)
