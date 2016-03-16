@@ -1,7 +1,11 @@
 <h1>The houses</h1>
-<% houses.each do |house| %>
+<% @houses.each do |house| %>
   <div class="house">
-    <h2><a href="houses_path"</a>@house</h2>
-    <img src="<% house.image_url %>"/>
-  <div>
+
+      <%= link_to house.name, house %>
+      <a href="/houses/<%= house.id %>">
+        <img src="<%= house.img_url %>" alt="<%= house.name %>" >
+      </a>
+
+  </div>
 <% end %>
