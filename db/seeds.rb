@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+require 'bundler/setup'
+
+require_relative '.'
+
 Student.destroy_all
 House.destroy_all
 

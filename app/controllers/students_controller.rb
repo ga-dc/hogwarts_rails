@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
   def index
-    @house = House.find(params[:house_id])
+    @houses = House.find(params[:house_id])
     @students = @house.students.all
   end
 
