@@ -13,14 +13,16 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create(student_params)
+    @student = Student.new(student_params)
+    @student.house_id = rand(5..8)
+    @student.save!
 
-    redirect_to students_path(@students)
+    redirect_to @student
   end
 
   private
   def student_params
-    params.require(:student).permit(:name, :img_url, :house_id)
+    params.require(:student).permit(:name, :img_url)
   end
 
 end
