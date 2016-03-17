@@ -2,6 +2,9 @@
 <%= image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
 
 <%= form_for @student do |f| %>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
   <%= f.label :name %>
   <%= f.text_field :name %>
 
