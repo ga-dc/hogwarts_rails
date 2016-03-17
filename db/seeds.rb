@@ -8,8 +8,6 @@
 
 require 'bundler/setup'
 
-require_relative '.'
-
 Student.destroy_all
 House.destroy_all
 
