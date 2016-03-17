@@ -1,11 +1,9 @@
-class HouseController < ApplicationController
+class HousesController < ApplicationController
+    def index
+        @houses = House.all
+    end
 
-  def index
-    @houses = Houses.all
-  end
-
-  def show
-    @houses = Houses.all
-  end
-
+    def show
+        @house = House.find(params[:id])
+    end
 end
