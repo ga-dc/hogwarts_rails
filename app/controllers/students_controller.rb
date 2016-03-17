@@ -13,7 +13,11 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create!(student_params)
+    houses = House.all.shuffle
+    house = houses.pop
+    @student = Student.new(student_params)
+    @student.house = house
+    @student.save
     redirect_to student_path(@student)
   end
 
