@@ -48,6 +48,7 @@ h2 {
 
 .house {
   display: inline-block;
+  color: black;
 }
 
 .house img {
