@@ -13,8 +13,9 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create!(student_params)
-
+    @student = Student.new(student_params)
+    @student.house_id = rand(1..4)
+    @student.save!
     redirect_to student_url(@student)
   end
 
