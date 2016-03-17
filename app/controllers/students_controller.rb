@@ -14,8 +14,6 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
-    # @student.sorting_hat
-    # @student.save!
     redirect_to @student
   end
 
