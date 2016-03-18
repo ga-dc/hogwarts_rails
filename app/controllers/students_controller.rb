@@ -1,11 +1,24 @@
-class StudentsController < ActionController
+class StudentsController < ApplicationController
 
   def index
-    @students = Students.all
+    @students = Student.all
   end
 
   def show
-    @student = Student.find(:id)
+    @student = Student.find(params[:id])
   end
 
+  def new
+    @student = Student.new
+  end
+
+  def create
+    @student = @house.students.create!(student_params)
+    redirect_to students_path
+  end
+
+  private
+  def student_params
+    params.require(:student).permit(:name, :img_url)
+  end
 end
