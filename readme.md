@@ -1,4 +1,4 @@
-# OH NO
+# OH MY GOD!!
 
 He-Who-Must-Not-Be-Named has placed a curse on the source code of Hogwarts' administration software. Errors, typos, and bugs abound! Literally nothing works.
 
