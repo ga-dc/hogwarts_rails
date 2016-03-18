@@ -1,8 +1,10 @@
-source 'https://voldemortwashere.org'
+#voldemort was here is not an appropriate source
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'rails', '4.2.5
+#adding  '  below commented out the proper comments
+gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets

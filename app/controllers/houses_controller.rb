@@ -1,11 +1,13 @@
-class HouseController < ApplicationController
+#must change some from singular to plural, and vice versa
+class HousesController < ApplicationController
 
   def index
-    @houses = Houses.all
+    @houses = House.all
   end
 
+#assign params
   def show
-    @houses = Houses.all
+    @houses = find(params[:id])
   end
 
 end

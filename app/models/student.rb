@@ -1,3 +1,4 @@
-def Student < ActiveRecord::Base
-  belongs_to :houses
+#fix to make houses singular
+class Student < ActiveRecord::Base
+  belongs_to :house
 end
