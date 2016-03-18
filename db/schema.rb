@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20131030184440) do
 
   create_table "houses", force: :cascade do |t|
     t.string "name",    null: false
-    t.string "img_url"
+    t.string "image_url"
   end
 
   create_table "students", force: :cascade do |t|
