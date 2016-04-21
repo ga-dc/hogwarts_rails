@@ -1,0 +1,14 @@
+<h1>Enroll At Hogwarts And Do Magic 'n Sheee-ite!</h1>
+
+<%= form_for @student do |f| %>
+
+  <div class="enroll_name">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="enroll_img">
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+  </div>
+  <%= f.submit %>
+<% end %>

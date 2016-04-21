@@ -54,6 +54,10 @@ h2 {
   display: block;
 }
 
+.enroll_name, .enroll_img {
+  margin: 20px;
+}
+
 img {
   border-radius: 40%;
   height: 300px;
