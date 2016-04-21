@@ -15,3 +15,8 @@ You're Rubyist Hagrid, a member of Dumbledore's Army. Correct all the errors so 
 ## Bonus
 
 Add functionality so students can enroll at Hogwarts (creating a new student). Include a "Sorting Hat" method to randomly assign new students to one of Hogwarts' four houses. (Where do you think this logic should go?)
+
+Errors:
++ Missing ' in Gemfile
++ Incorrect souce in Gemfile (should be source 'https://rubygems.org')
++ Timestamps :created_at
