@@ -1,2 +1,14 @@
 <h1>Welcome to the Sorting Hat!</h1>
-<% image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+<img src="http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg"/>
+
+<%= form_for @student do |s| %>
+
+  <%= s.label :name %>
+  <%= s.text_field :name %>
+
+  <%= s.label :img_url %>
+  <%= s.text_field :img_url%>
+
+  <%= s.submit %>
+
+<% end %>
