@@ -1,6 +1,3 @@
 <h1>Here are the students</h1>
-<% @students.each do |student| %>
-  <div>
-    <%= link_to student, students_path(student) %> - <%= student.house %>
-<% end %>
-  </div>
+
+<%= render partial: "student", collection: @students %>
