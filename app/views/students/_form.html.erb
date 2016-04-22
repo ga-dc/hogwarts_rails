@@ -1,0 +1,22 @@
+<%= form_for [@house, @student] do |f| %>
+
+   <% if @student.errors.any? %>
+    <div id="error_explanation">
+       <ul>
+        <h2>errors:</h2>
+         <% @student.errors.full_messages.each do |message| %>
+           <li><%= message %></li>
+         <% end %>
+       </ul>
+     </div>
+  <% end  %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+   <%= f.label :img_url %>
+   <%= f.text_field :img_url %>
+
+
+ <%= f.submit %>
+ <% end %>

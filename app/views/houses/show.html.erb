@@ -1,7 +1,15 @@
 <h1><%= @house.name %></h1>
+
 <% @house.students.each do |student| %>
   <div class="student">
     <h2><%= student.name %></h2>
     <%= image_tag student.img_url %>
+    <%= link_to "(edit)", edit_house_student_path(@house, student) %>
   </div>
 <% end %>
+
+
+
+<h2>Add a new Student for <%= @house.name %></h2>
+
+<%= render 'students/form' %>
