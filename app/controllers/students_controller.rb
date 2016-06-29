@@ -12,9 +12,16 @@ class StudentsController < ApplicationController
       @student = Student.new
   end
 
-  # def create
-  #     @student = Student.create!()
-  #       redirect_to artist_song_path(@artist, @song)
-  # end
+  def create
+      @student = Student.new(student_params)
+      @student = Student.sorting_hat @student
+      @student = Student.create!({:name => @student.name, :img_url => @student.img_url, :house => @student.house})
+      redirect_to student_url(@student)
+  end
+
+  private
+  def student_params
+      params.require(:student).permit(:name, :img_url)
+  end
 
 end
