@@ -14,6 +14,9 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.create!(student_params)
+    def house_id
+      @house_id = 1
+    end
     redirect_to students_path
   end
 
