@@ -1,5 +1,6 @@
-<h1><%= @student.name %></h1>
-<h2><%= @student.house %></h2>
+<h1><%= @students.name %></h1>
 <div class="student">
-  <%= image_tag @student.img_url />
+  <%= image_tag @students.img_url %>
 </div>
+<br>
+<%= link_to "Delete Student", @student, method: :delete, class: "delete" %>
