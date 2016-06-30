@@ -3,3 +3,5 @@
 <div class="student">
   <%= image_tag @student.img_url %>
 </div>
+ <br>
+  <%= link_to "Delete Student", @student, method: :delete, class: "delete"%>
