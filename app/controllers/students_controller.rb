@@ -13,10 +13,10 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create!(student_params)
-    def house_id
-      @house_id = 1
-    end
+    @student = Student.new(student_params)
+    @student.get_house_data
+    @student.save!
+    
     redirect_to students_path
   end
 
