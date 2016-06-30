@@ -1,7 +1,9 @@
 Hogwarts::Application.routes.draw do
 
-  root "house#index"
-  resource :house, only: [:index, :show]
-  resources :students, only: [:index, :show]
+  root to: "houses#index"
+  # resources :houses
+  # resources :students
+  resources :houses, only: [:index, :show]
+  resources :students, only: [:index, :show, :create, :new]
 
 end
