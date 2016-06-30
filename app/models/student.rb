@@ -1,3 +1,3 @@
-def Student < ActiveRecord::Base
-  belongs_to :houses
+class Student < ActiveRecord::Base
+  belongs_to :house
 end
