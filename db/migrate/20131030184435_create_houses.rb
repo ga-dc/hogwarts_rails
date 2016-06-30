@@ -1,10 +1,10 @@
 class CreateHouses < ActiveRecord::Migration
   def change
     create_table :houses do |t|
-      f.string :name, null: false
-      f.string :img_url
+      t.string :name, null: false
+      t.string :image_url
 
-      f.timestamps
+      t.timestamps
     end
   end
 end
