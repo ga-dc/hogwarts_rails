@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   root to: "houses#index"
-  resources :houses do
-    resources :students
-  end
-
+  resources :houses
   resources :students
   # , only: [:index, :show]
   # resources :students
