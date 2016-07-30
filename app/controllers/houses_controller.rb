@@ -6,7 +6,6 @@ class HousesController < ApplicationController
 
   def show
     @house = House.find(params[:id])
-    @students = Student.where(house_id: params[:id])
   end
 
 end
