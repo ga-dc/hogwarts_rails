@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-student.destroy_all
-House.destroy_al
+Student.destroy_all
+House.destroy_all
 
 gryffindor = House.create(name:"Gryffindor", image_url:"http://images1.wikia.nocookie.net/__cb20120922143611/harrypotter/images/7/70/G_final.jpg")
 hufflepuff = House.create(name:"Hufflepuff", image_url:"http://images3.wikia.nocookie.net/__cb20111027164827/harrypotter/images/3/3f/H_final.jpg")
@@ -19,6 +19,7 @@ ron = Student.create(name: "Ron Weasley", img_url:"http://images4.wikia.nocookie
 hermione = Student.create(name: "Hermione Granger", img_url:"http://images2.wikia.nocookie.net/__cb20120512155742/harrypotter/images/thumb/9/95/DeathlyPromo_Hermione.PNG/250px-DeathlyPromo_Hermione.PNG", house: gryffindor)
 
 luna = Student.create(name: "Luna Lovegood", img_url:"http://images1.wikia.nocookie.net/__cb20101113121321/harrypotter/images/thumb/4/49/Luna_profile.jpg/250px-Luna_profile.jpg", house: ravenclaw)
+
 cho = Student.create(name: "Cho Chang", img_url:"http://images3.wikia.nocookie.net/__cb20081103140303/harrypotter/images/thumb/c/c1/Cho_Chang_Profile.JPG/250px-Cho_Chang_Profile.JPG", house: ravenclaw)
 
 cedric = Student.create(name: "Cedric Diggory", img_url:"http://images1.wikia.nocookie.net/__cb20111015180906/harrypotter/images/thumb/c/c5/Cedric.jpg/250px-Cedric.jpg", house: hufflepuff)
