@@ -9,7 +9,7 @@
 <body>
   <nav>
     <h1>Welcome to Hogwarts!</h1>
-    <h2><%= link_to "View Houses", houses_path(@houses) %> | <%= link_to "View Students", students_path(@students) %></h2>
+    <h2><%= link_to "View Houses", houses_path(@houses) %> | <%= link_to "View Students", students_path(@students) %> |  <%= link_to "Enroll Student", students_path(@students) %></h2>
   </nav>
 
   <%= yield %>

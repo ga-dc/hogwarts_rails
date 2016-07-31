@@ -1,5 +1,5 @@
 <h1><%= @student.name %></h1>
-<h2><%= @student.house.name %></h2>
-<div class="student">
-<img src="<%= @student.img_url %>"></img>
-</div>
+<h2><a href = "/houses/<%= @current_house.id %>"><%= @current_house.name %></h2>
+  <div class="student">
+    <img src="<%= @student.img_url %>"></img>
+  </div>

@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
+    @current_house = House.find(@student.house_id)
   end
 
 end
