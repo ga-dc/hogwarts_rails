@@ -1,0 +1,11 @@
+<h1> Ask. And, it will be built before your very eyes! </h1>
+
+<%= form_for (@house) do |t| %>
+<%= t.label :name %>
+<%= t.text_field :name %>
+
+<%= t.label :img_url %>
+<%= t.text_field :img_url %>
+
+<%= t.submit %>
+<% end %>

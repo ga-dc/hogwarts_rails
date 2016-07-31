@@ -1,7 +1,9 @@
 <h1><%= @house.name %></h1>
-<% @house.students.each do |student| %>
-  <div class="student">
-    <h2><%= student.name %></h2>
-    <%= image_tag student.img_url %>
-  </div>
+<div class="student">
+  <img src="<%= @house.img_url %>"></img>
+</div>
+<h2>Enrolled Students: </h2>
+<% @current_students.each do |student| %>
+<h3><a href= "/students/<%= student.id %>"><%= student.name %></a></h3>
+
 <% end %>
