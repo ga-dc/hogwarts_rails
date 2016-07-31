@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   def new
-    @artist = Artist.new
+    @student = Student.new
   end
 
   def index
