@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: hogwarts_development
+  database: hogwarts_db
   pool: 5
   username: <%= `whoami` %>
   password:
