@@ -10,7 +10,7 @@ You're Rubyist Hagrid, a member of Dumbledore's Army. Correct all the errors so 
 
 > Looking at files in Atom with syntax highlighting may be helpful.
 
-> Making sure your HTML and CSS validate is still important! If you copy an paste a `.erb` file it won't validate, however -- so copy and paste the resulting HTML as it shows up in your web browser.
+> Making sure your HTML and CSS validate is still important! If you copy and paste a `.erb` file it won't validate, however -- so copy and paste the resulting HTML as it shows up in your web browser.
 
 ## Bonus
 
