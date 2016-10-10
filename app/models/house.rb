@@ -1,3 +1,3 @@
-class House < ApplicationRecord
+class House < ActiveRecord::Base
   has_many :students
 end
