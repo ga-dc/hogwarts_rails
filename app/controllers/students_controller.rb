@@ -1,9 +1,8 @@
-class StudentsController < ActionController
+class StudentsController < ApplicationController
 
   # index
   def index
-    @house = House.find params[:house_id]
-    @students = @house.students.all
+    @students = Student.all
   end
 
   # new
@@ -12,9 +11,7 @@ class StudentsController < ActionController
 
   # show
   def show
-    @house = House.find params[:house_id]
-    @student = @house.students.find(params[:id])
-    # @student = student.find(:id)
+    @student = Student.find params[:id]
   end
 
   # edit
