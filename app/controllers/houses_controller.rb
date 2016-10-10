@@ -1,11 +1,23 @@
-class HouseController < ApplicationController
+class HousesController < ApplicationController
 
+  # index
   def index
     @houses = House.all
   end
 
+  # new
+
+  # create
+
+  # show
   def show
-    @houses = House.all
+    @house = House.all
   end
+
+  # edit
+
+  # update
+
+  # destroy
 
 end
