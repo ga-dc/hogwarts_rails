@@ -13,9 +13,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.new(strong_params)
-    @student.sorting_hat
-    @student.save
+    @student = Student.create(strong_params)
+    redirect_to student_path(@student)
   end
 
   private
