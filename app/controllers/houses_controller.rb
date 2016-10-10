@@ -5,13 +5,6 @@ class HousesController < ApplicationController
   end
 
   def show
-    @house = House.find(houses_params)
-  end
-  def new
-    @house = House.new
-  end
-  private
-  def houses_params
-    params.require(:house).permit(:name, :img_url)
+    @house = House.find(params[:id])
   end
 end
