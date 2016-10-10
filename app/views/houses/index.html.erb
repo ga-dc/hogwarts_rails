@@ -4,6 +4,6 @@
     <h2>
       <%= link_to "#{house.name}", house_path(house) %>
     </h2>
-    <img src="<%= house.img_url %>"/>
+    <%= image_tag "#{house.img_url}" %>
   <div>
 <% end %>
