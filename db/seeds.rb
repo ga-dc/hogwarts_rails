@@ -14,7 +14,7 @@ hufflepuff = House.create(name:"Hufflepuff", img_url:"http://images3.wikia.nocoo
 ravenclaw = House.create(name:"Ravenclaw", img_url:"http://images2.wikia.nocookie.net/__cb20111021043857/harrypotter/images/d/da/R_final.jpg")
 slytherin = House.create(name:"Slytherin", img_url:"http://images3.wikia.nocookie.net/__cb20111027165214/harrypotter/images/d/da/S_final.jpg")
 
-harry = gryffindor.create(name: "Harry Potter", img_url:"http://images1.wikia.nocookie.net/__cb20111110202524/harrypotter/images/thumb/d/d4/Dhharryroomhighreso.jpg/250px-Dhharryroomhighreso.jpg", house: gryffindor)
+harry = Student.create(name: "Harry Potter", img_url:"http://images1.wikia.nocookie.net/__cb20111110202524/harrypotter/images/thumb/d/d4/Dhharryroomhighreso.jpg/250px-Dhharryroomhighreso.jpg", house: gryffindor)
 ron = Student.create(name: "Ron Weasley", img_url:"http://images4.wikia.nocookie.net/__cb20090712085217/harrypotter/images/9/99/Ron_DH.PNG", house: gryffindor)
 hermione = Student.create(name: "Hermione Granger", img_url:"http://images2.wikia.nocookie.net/__cb20120512155742/harrypotter/images/thumb/9/95/DeathlyPromo_Hermione.PNG/250px-DeathlyPromo_Hermione.PNG", house: gryffindor)
 
