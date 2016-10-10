@@ -2,9 +2,9 @@
 
 <% @houses.each do |house| %>
   <div class="house">
-    <h2><a href="houses_path"</a>@houses</h2>
+    <h2><a href="houses_path"</a><%=house.name%></h2>
     <img src="<%= house.img_url %>"/>
-  <div>
+  </div>
 <% end %>
 
 
