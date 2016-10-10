@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
-    @student.house_id = rand(1...4)
+    @student.house_id = rand(1..4)
     @student.save
     redirect_to student_path(@student)
   end
