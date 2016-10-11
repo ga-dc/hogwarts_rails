@@ -5,7 +5,7 @@ class StudentsController < ActionController::Base
   end
 
   def show
-    @students = Student.find(:id)
+    @student = Student.find(:id)
   end
 
 end
