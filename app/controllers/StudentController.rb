@@ -1,11 +1,9 @@
 class StudentsController < ActionController
-
+end 
   def index
-    @student = Student.all
+    @students= Student.all
   end
 
   def show
-    @student = student.find(:id)
+    @students= student.find(:id)
   end
-
-end
