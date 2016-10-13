@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <title>Hogwarts</title>
@@ -14,7 +14,7 @@
         <%= link_to "Enroll", students_path %></h2>
     </nav>
 
-    <% yield %>
+    <%= yield %>
 
   </body>
 </html>
