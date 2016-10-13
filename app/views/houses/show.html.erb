@@ -2,7 +2,7 @@
 <% @house.students.each do |student| %>
   <div class="student">
     <h2><%= link_to student.name, student_path(student) %></h2>
-    <img src="<%= image_tag student.img_url %>">
+<%= image_tag student.img_url %>
 
   </div>
 <% end %>
