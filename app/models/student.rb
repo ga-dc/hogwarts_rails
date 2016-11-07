@@ -4,7 +4,12 @@ class Student < ActiveRecord::Base
 
   private
   def generate_house
-    self.house_id = rand(1..4).to_i
+    house_ids = []
+    @houses = House.all
+    @houses.each do |house|
+      house_ids << house.id
+    end
+    self.house_id = house_ids.sample
   end
 
 end
