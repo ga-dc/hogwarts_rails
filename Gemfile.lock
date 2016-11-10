@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://www.rubygems.org/
   specs:
     actioncable (5.0.0)
       actionpack (= 5.0.0)
@@ -180,4 +180,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
