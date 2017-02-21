@@ -1,7 +1,10 @@
-<h1><%= @house.name %></h1>
-<% @house.students.each do |student| %>
-  <div class="student">
-    <h2><%= student.name %></h2>
-    <%= image_tag student.img_url %>
-  </div>
+
+<% @houses.each do |house| %>
+  <h1 class = 'center'><%= house.name %></h1>
+    <% house.students.each do |student| %>
+      <div class="student center">
+      <h2 class= 'center'><%= student.name %></h2>
+      </div>
+      <%= image_tag student.img_url %>
+      <% end %>
 <% end %>
