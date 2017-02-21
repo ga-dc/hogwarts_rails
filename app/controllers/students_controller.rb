@@ -10,8 +10,10 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create(name: params[:name], img_url: params[:img_url], house_id: rand 1..4)
-    redirect students_path
+    @student = Student.new(student_params)
+    @student.house= House.all.sample
+    @student.save
+    redirect_to student_path(@student)
   end
 
   def show
@@ -20,7 +22,7 @@ class StudentsController < ApplicationController
 
   private
   def student_params
-    params.require(:student).permit(:name, :img_url, :house_id)
+    params.require(:student).permit(:name, :img_url)
   end
 
 end
