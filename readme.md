@@ -1,5 +1,5 @@
 # OH NO
-
+ 
 He-Who-Must-Not-Be-Named has placed a curse on the source code of Hogwarts' administration software. Errors, typos, and bugs abound! Literally nothing works.
 
 ## Your Mission
@@ -14,7 +14,7 @@ You're Rubyist Hagrid, a member of Dumbledore's Army. Correct all the errors so 
 
 ## Submission
 
-Fork and clone this repo. Once you have made the necessary corrections, push your changes and submit a pull request. 
+Fork and clone this repo. Once you have made the necessary corrections, push your changes and submit a pull request.
 
 ## Bonus
 
