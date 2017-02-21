@@ -1,2 +1,2 @@
-class House < ActiveRecord
+class Houses < ActiveRecord::Base
 end
