@@ -1,5 +1,4 @@
-class StudentsController < ActionController
-
+class StudentsController < ApplicationController
   def index
     @student = Student.all
   end
@@ -7,5 +6,4 @@ class StudentsController < ActionController
   def show
     @student = student.find(:id)
   end
-
 end
