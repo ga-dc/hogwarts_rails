@@ -4,7 +4,7 @@ class CreateHouses < ActiveRecord::Migration
       t.string :name
       t.string :image_url
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end
