@@ -1,3 +1,3 @@
-class House < ActiveRecord
-  has_many :students, dependent: :destroy 
+class House < ActiveRecord::Base
+  has_many :students, dependent: :destroy
 end
