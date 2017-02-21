@@ -1,2 +1,23 @@
 <h1>Welcome to the Sorting Hat!</h1>
-<% image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+<%= image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+
+
+<form action="/students" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="student[name]">What's your name?</label>
+  <br>
+  <input name="student[name]">
+
+  <br>
+  <br>
+
+  <label for="student[img_url]">Can you give me a picture of you? I promise I won't do anything creepy with it.</label>
+  <br>
+  <input name="student[img_url]">
+  <br>
+  <br>
+
+  <input type="submit" value="SUBMIT">
+
+</form>
