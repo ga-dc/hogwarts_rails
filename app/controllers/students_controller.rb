@@ -5,8 +5,22 @@ class StudentsController < ApplicationController
 
   end
 
+  def new
+    @student = Student.new
+  end
+
+  def create
+    @student = Student.create(name: params[:name], img_url: params[:img_url], house_id: rand 1..4)
+    redirect students_path
+  end
+
   def show
     @student = Student.find(params[:id])
+  end
+
+  private
+  def student_params
+    params.require(:student).permit(:name, :img_url, :house_id)
   end
 
 end
