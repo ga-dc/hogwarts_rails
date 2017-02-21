@@ -1,6 +1,4 @@
-<h1>Welcome to the Sorting Hat!</h1>
-<img src="http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg"></img>
-
+<h2>Edit Student</h2>
 
 <%= form_for @student do |f| %>
   <%= f.label :name %>
@@ -13,4 +11,8 @@
   <%= f.text_field :house_id %>
 
   <%= f.submit %>
+<% end %>
+
+<%= form_for @student, method: :delete do |f| %>
+  <%= f.submit "ELMINATE", class: "delete" %>
 <% end %>
