@@ -1,5 +1,4 @@
 <h1><%= @student.name %></h1>
-<h2><%= @student.house %></h2>
-<div class="student">
-  <%= image_tag @student.img_url />
-</div>
+<h2><%= @student.house.name %></h2>
+
+<img src="<%= @student.img_url %>"></img>
