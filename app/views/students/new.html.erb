@@ -8,8 +8,7 @@
   <%= f.label :img_url %>
   <%= f.text_field :img_url %>
 
-
-  <% house_id: rand(1..4)  %>
+  <%= f.hidden_field :house_id, :value => rand(1..4) %>
 
   <%= f.submit "Enroll"%>
 <% end %>

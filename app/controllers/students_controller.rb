@@ -10,11 +10,12 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
+    # @random_num = rand(4)
   end
 
   def create
     @student = Student.create!(student_params)
-    redirect_to "/students"
+    redirect_to student_path(@student)
   end
 
 
