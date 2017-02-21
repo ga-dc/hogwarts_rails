@@ -1,0 +1,18 @@
+<h2>Edit Student</h2>
+
+<%= form_for @student do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :house_id %>
+  <%= f.text_field :house_id %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for @student, method: :delete do |f| %>
+  <%= f.submit "ELMINATE", class: "delete" %>
+<% end %>
