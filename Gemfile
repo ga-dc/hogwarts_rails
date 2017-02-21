@@ -1,8 +1,8 @@
-source 'https://voldemortwashere.org'
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'rails', '5.0.1'
+gem 'rails', github: 'rails/rails', branch: "5-0-stable"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
