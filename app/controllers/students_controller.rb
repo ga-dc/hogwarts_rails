@@ -1,7 +1,7 @@
-class StudentsController < ActionController
+class StudentsController < ApplicationController
 
   def index
-    @student = Student.all
+    @students = Student.all
   end
 
   def show
@@ -13,7 +13,7 @@ class StudentsController < ActionController
   end
 
   def create
-    @student = Student.create(house_params)
+    @student = Student.create(students_params)
     redirect_to "/students/#{@student.id}"
   end
 
