@@ -1,4 +1,4 @@
-class StudentsController < ActionController
+class StudentsController < ApplicationController
 
   def index
     @students = Student.all
@@ -6,6 +6,17 @@ class StudentsController < ActionController
 
   def show
     @student = Student.find(params[:id])
+  end
+
+  def new
+    @student = Student.new
+  end
+
+  # create
+  def create
+    @student = Student.create!(student_params)
+
+    redirect_to student_path(@student)
   end
 
 end
