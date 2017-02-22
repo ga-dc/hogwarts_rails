@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :houses, only: [:index, :show]
   resources :students, only: [:index, :show]
 
-#houses routes
 
   get     '/houses',          to: 'houses#index'
   get     '/houses/new',      to: 'houses#new'
@@ -15,7 +14,6 @@ Rails.application.routes.draw do
   put     '/houses/:id',      to: 'houses#update'
   delete  '/houses/:id',      to: 'houses#destroy'
 
-  # students routes
   get     '/students',          to: 'students#index'
   get     '/students/new',      to: 'students#new'
   post    '/students',          to: 'students#create'
