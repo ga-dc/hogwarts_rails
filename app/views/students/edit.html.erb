@@ -11,8 +11,3 @@
 
   <%= f.submit "Update" %>
 <% end %>
-
-
-<%= form_for @student, url: "/students/#{@student.id}", method: :delete do |f| %>
-  <% f.submit "Delete", class: "btn-delete" %>
-<% end %>
