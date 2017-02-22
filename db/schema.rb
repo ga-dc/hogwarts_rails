@@ -31,4 +31,5 @@ ActiveRecord::Schema.define(version: 20131030184440) do
     t.index ["house_id"], name: "index_students_on_house_id", using: :btree
   end
 
+  add_foreign_key "students", "houses"
 end
