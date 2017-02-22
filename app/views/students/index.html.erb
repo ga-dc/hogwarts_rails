@@ -1,21 +1,24 @@
-              <%# ############################################# %>
-              <%# # 201702221441L     EL MIERCOLES   GIRO %>
-              <%# # GIRO: CLOSED <tile> TAG w ANGEL & JAMES%>
+                        <%# ############################################# %>
+                        <%# # 201702221441L     EL MIERCOLES   GIRO %>
+                        <%# # GIRO: CLOSED <tile> TAG w ANGEL & JAMES%>
 
 <h1>Here are the students</h1>
-<% @students.each do |student| %>
-  <div>
-    <%#= link_to student, students_path(:name) %> - <%#= student.house %>   <%# - #<House:0x007fea46a4ae88> - #<House:0x007fea46a4ae88> -->
-    <%#= link_to student, students_path(:id) %> - <%#= student.house %>   <%# - #<House:0x007fea40f86970> #<Student:0x007fea421d04f0> - #<House:0x007fea40f86970>%>
-    <%#= link_to student, students_path(:name) %> - <%#= student.house %>
-    <%#= link_to student, students_path(student) %> - <%#= student.house %> <%#= - - - - #<House:0x007fea468287e0> %>
-    <%#= link_to student, students_path(name) %> - <%#= student.house %>   <%#= undefined local variable or method `name' for #<#<Class:0x007fea459d8c58>:0x007fea41d02a40>%>
-                    <%#= students_path(student.name) %>
-                    <%#= students_path(@student.name) %>
-                    <%#= students_path() %>
-                    <%#= student_path() %>
-                    <%#= student_path(:id) %>
-    <%= student.name %> - <%= student.house.name %>   <%#= - - - - - #<Student:0x007fea468a18c0> - #<House:0x007fea46892c30> - - - - - #<Student:0x007fea468a1780> - #<House:0x007fea45b43a70> - - - - - #<Student:0x007fea468a1640> - #<House:0x007fea46881660> %>
+  <% @students.each do |student| %>
+        <div class="student"> <%= image_tag student.img_url %>
+                            <%#= link_to student, students_path(:name) %> - <%#= student.house %>   <%# - #<House:0x007fea46a4ae88> - #<House:0x007fea46a4ae88> -->
+          <%#= link_to student, students_path(:id) %> - <%#= student.house %>   <%# - #<House:0x007fea40f86970> #<Student:0x007fea421d04f0> - #<House:0x007fea40f86970>%>
+          <%#= link_to student, students_path(:name) %> - <%#= student.house %>
+          <%#= link_to student, students_path(student) %> - <%#= student.house %> <%#= - - - - #<House:0x007fea468287e0> %>
+          <%#= link_to student, students_path(name) %> - <%#= student.house %>   <%#= undefined local variable or method `name' for #<#<Class:0x007fea459d8c58>:0x007fea41d02a40>%>
+                          <%#= students_path(student.name) %>
+                          <%#= students_path(@student.name) %>
+                          <%#= students_path() %>
+                          <%#= student_path() %>
+                          <%#= student_path(:id) %>
+          <%= student.name %> - <%= student.house.name %>   <%#= - - - - - #<Student:0x007fea468a18c0> - #<House:0x007fea46892c30> - - - - - #<Student:0x007fea468a1780> - #<House:0x007fea45b43a70> - - - - - #<Student:0x007fea468a1640> - #<House:0x007fea46881660> %>
+        </div>
+  <% end %>
 
-<% end %>
-  </div>
+  <%#= link_to root_path do %>
+    <%#= content_tag :span, "Home", :class => "home-link" %>
+  <%# end  => <a href="/"><span class="home-link">Home</span></a> %>
