@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
 
   root to: 'houses#index'
-  resource :houses, only: [:index, :show]
+  resources :houses, only: [:index, :show]
   resources :students, only: [:index, :show]
 
 #houses routes
 
   get     '/houses',          to: 'houses#index'
   get     '/houses/new',      to: 'houses#new'
-  post    '/houses',          to: 'houses#create'
+  post    '/houses',         to: 'houses#create'
 
-  get     '/houses/:id',      to: 'houses#show'
+  get     '/houses/:id',     to: 'houses#show'
   get     '/houses/:id/edit', to: 'houses#edit'
   put     '/houses/:id',      to: 'houses#update'
   delete  '/houses/:id',      to: 'houses#destroy'
