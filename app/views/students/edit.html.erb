@@ -9,3 +9,7 @@
 
   <%= f.submit "Update" %>
   <% end %>
+
+  <%= form_for @student, method: :delete do |f| %>
+  <%= f.submit "Delete Student", class: "delete" %>
+  <% end %>

@@ -27,8 +27,14 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
-    @student.update(song_params)
+    @student.update(student_params)
     redirect_to student_path(@student)
+  end
+
+  def destroy
+    @student = Student.find(params[:id])
+    @student.destroy
+    redirect_to students_path
   end
 
 private
