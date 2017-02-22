@@ -1,18 +1,28 @@
+<%# ############################################# %>
+<%# # 201702221441L     EL MIERCOLES   GIRO %>
+<%# # GIRO: CLOSED <title> TAG w ANGEL & JAMES%>
+
 <!DOCTYPE html>
 <html>
   <head>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-    <title>Hogwarts
+    <!-- <title>Hogwarts -->
+    <title>Hogwarts</title>      <%# GIRO: I HADNT CLOSED THIS TITLE TAG%>
   </head>
   <body>
     <nav>
       <h1>Welcome to Hogwarts!</h1>
-      <h2><%= link_to "View Houses", houses_path %> | <%= link_to "View Students", student_path %> | <%= link_to "Enroll", student_path %></h2>
+      <h2><%= link_to "View Houses", houses_path %>     |
+          <%= link_to "View Students", students_path %> |
+          <%= link_to "Enroll", students_path %>
+          <%# No route matches {:action=>"show", :controller=>"students"} missing required keys: [:id] %>
+
+     </h2>
     </nav>
 
-    <% yield %>
+    <%= yield %>
 
   </body>
 </html>
