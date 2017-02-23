@@ -1,7 +1,3 @@
-<%# ############################################# %>
-<%# # 201702221441L     EL MIERCOLES   GIRO %>
-<%# # GIRO: CLOSED <title> TAG w ANGEL & JAMES%>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +12,7 @@
       <h1>Welcome to Hogwarts!</h1>
       <h2><%= link_to "View Houses", houses_path %>     |
           <%= link_to "View Students", students_path %> |
-          <%= link_to "Enroll", students_path %>
+          <%= link_to "Enroll", new_student_path %>
           <%# No route matches {:action=>"show", :controller=>"students"} missing required keys: [:id] %>
 
      </h2>

@@ -1,18 +1,12 @@
-              <%# ############################################# %>
-              <%# 201702221546L     EL MIERCOLES   GIRO %>
-              <%#= WW LISAB DURING OUTCOMES
-
-
 <h1><%= @student.name %></h1>
 
-<h2><%= @student.house %></h2>
+<h2><%= @student.house.name %></h2>
 
-<div class="student"> <%= image_tag @student.img_url %> </div>
+<div class="student">
+    <%= image_tag @student.img_url %>
+</div>
 
-              <%#= from LISAB
 <h1>
-  <%#= @student.name %#> <%#= link_to "(edit)", edit_student_path(@student) %#></h1>
-<h2>
-  <%#= @student.house.name %#></h2>
-<img src="
-<%#= @student.img_url %#>"></img>
+    <%= @student.name %>
+    <%= link_to "(edit)", edit_student_path(@student) %></h1>
+<img src="<%= @student.img_url %>"></img>
