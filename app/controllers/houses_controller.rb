@@ -13,4 +13,9 @@ class HousesController < ApplicationController
     puts "*" * 60
   end
 
+  private
+    def house_params
+      params.require(:house).permit(:name, :img_url)
+    end
+
 end

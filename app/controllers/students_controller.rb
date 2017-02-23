@@ -9,32 +9,23 @@ class StudentsController < ApplicationController
   end
 
   def new
-    @new_student = Student.new
-    @new_student.house_id = (1..4).to_a.sample.to_i
-    puts "*" * 60
-    puts "*" * 60
-    puts @new_student
-    puts @new_student.house_id
-    puts "*" * 60
-    puts "*" * 60
+    @student = Student.new
   end
 
   def create
-
-    @new_student = Student.create!(student_params)
+    @student = Student.create(student_params)
+    sorting_hat(@student)
+    @student.save
     redirect_to student_path(@student)
   end
 
-  def sorting_hat
-    # house_id: 1
-    #@student.house_id = 1
-    # house = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"].sample
-    # params[:house_id] = house
+  def sorting_hat(student)
+    student.house_id = (1..4).to_a.sample.to_i
   end
 
   private
     def student_params
-      params.require(:student).permit(:name, :img_url, :house)
+      params.require(:student).permit(:name, :img_url, :house_id)
     end
 
 end
