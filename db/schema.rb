@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -29,8 +28,7 @@ ActiveRecord::Schema.define(version: 20131030184440) do
     t.integer  "house_id",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["house_id"], name: "index_students_on_house_id", using: :btree
   end
-
-  add_index "students", ["house_id"], name: "index_students_on_house_id", using: :btree
 
 end
