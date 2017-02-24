@@ -4,5 +4,5 @@
 
 <h1>The houses</h1>
     <% @houses.each do  |house| %>
-          <h2><%= link_to house.name, house %> </h2>
+          <h2><%= link_to house.name, houses_path %> </h2>
     <% end %>

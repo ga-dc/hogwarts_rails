@@ -2,7 +2,7 @@
 <% @students.each do |student| %>
 <div class="student">
     <%= image_tag student.img_url %>
-    <div><%= link_to "#{student.name} - #{student.house.name}", student_path(student) %>
-    </div>
+    <div><%= link_to student.name, student_path(student) %> - <%= student.house %></div>
+
 </div>
 <% end %>
