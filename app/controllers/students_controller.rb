@@ -8,4 +8,11 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+  def new
+    @students = Student.new
+  end
+
+  def create
+  @student = Student.create(name: params[:name], house[:house], img_url:params[:img_url])
+  end
 end
