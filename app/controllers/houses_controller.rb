@@ -5,7 +5,7 @@ class HousesController < ApplicationController
   end
 
   def show
-    @houses = House.all
+    @houses = Houses.all
   end
 
 end
