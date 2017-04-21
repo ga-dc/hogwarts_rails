@@ -3,8 +3,8 @@ class CreateStudents < ActiveRecord::Migration
     create_table :students do |t|
       t.string :name, null: false
       t.string :img_url
-      t.references :house, null: false, index:true
-
+      t.references :house, foreign_key: true, index:true
+      
       t.timestamps
     end
   end
