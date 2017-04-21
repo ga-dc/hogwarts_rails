@@ -1,2 +1,3 @@
 class House < ActiveRecord
+  
 end
