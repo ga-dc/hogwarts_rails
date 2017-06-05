@@ -1,10 +1,10 @@
-Rails. application.routes.draw do
+Rails.application.routes.draw do
 
 
 # Hogwarts::Application.routes.draw do
-
-  # root "house#index"
-  # resource :house, only: [:index, :show]
-  # resources :students, only: [:index, :show]
+  get 'houses/index'
+  root 'houses#index'
+  resource :house, only: [:index, :show]
+  resources :students, only: [:index, :show]
 
 end
