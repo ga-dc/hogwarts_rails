@@ -1,0 +1,16 @@
+current directory: /Users/fitsumhaile/wdi/sandbox/hogwarts_rails/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+/Users/fitsumhaile/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20170605-52617-1yyxm1d.rb extconf.rb
+
+current directory: /Users/fitsumhaile/wdi/sandbox/hogwarts_rails/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/fitsumhaile/wdi/sandbox/hogwarts_rails/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/fitsumhaile/wdi/sandbox/hogwarts_rails/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.
