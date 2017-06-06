@@ -1,11 +1,15 @@
 class StudentsController < ApplicationController
 
   def index
-    @student = Student.all
+    @students = Student.all
   end
 
   def show
-    @student = Student.find(:id)
+    @students = Student.find(params[:id])
+  end
+  def new
+  end
+  def create
   end
 
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get '/houses/:id' => 'houses#show'
+
 
 
 # Hogwarts::Application.routes.draw do
