@@ -13,6 +13,8 @@ class StudentsController < ApplicationController
     @house = House.all
   end
 
+  def new
+  end
   # private
   # def find_house
     # @house = House.find(params[:house_id])

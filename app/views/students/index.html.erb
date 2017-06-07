@@ -2,6 +2,6 @@
 
 <% @student.each do |student| %>
   <div>
-    <h2><%= link_to student.name, houses_student_path(@student) %> - <%= House.find(student.house_id).name %></h2>
-<% end %>
+    <h2><%= link_to student.name, students_path(@student) %> </h2>
   </div>
+<% end %>
