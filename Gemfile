@@ -1,4 +1,4 @@
-source 'https://voldemortwashere.org'
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 
 gem 'pry-rails'
+# gem 'rails_serve_static_assets', '~> 0.0.5'
+# gem 'installrails_serve_static_assets'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
