@@ -1,11 +1,13 @@
-class HouseController < ApplicationController
-
+class HousesController < ApplicationController
   def index
-    @houses = Houses.all
+    @houses = House.all
   end
-
   def show
-    @houses = Houses.all
+    @houses = House.find(params[:id])
+  end
+  def create
+    @houses = House.create!(name: params[:house])
+    redirect_to "/houses/#{@houses.id}"
   end
 
 end
