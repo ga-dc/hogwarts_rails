@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20131030184440) do
 
   create_table "houses", force: :cascade do |t|
     t.string   "name",       null: false
-    t.string   "img_url"
+    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
