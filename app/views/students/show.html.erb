@@ -3,3 +3,7 @@
 <div class="student">
   <%= image_tag @student.img_url %>
 </div>
+
+<%= form_for @student, method: :delete do |f| %>
+  <%= f.submit "Remove Student" %>
+<% end %>
