@@ -5,7 +5,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :img_url
       t.references :house, null: false, index:true
 
-      t.timestamps
+      t.timestamps 
     end
   end
 end
