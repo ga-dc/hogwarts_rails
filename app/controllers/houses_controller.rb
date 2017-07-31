@@ -5,7 +5,13 @@ class HousesController < ApplicationController
   end
 
   def show
-    @houses = House.all
+    @house = House.find(params[:id])
   end
 
+  def new
+    @house = House.new
+  end
+
+  def create
+  end
 end
