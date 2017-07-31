@@ -1,4 +1,4 @@
-<h1>Here are the students</h1>
+<h2>Here are the students</h2>
   <% @students.each do |student| %>
     <div>
       <%= link_to "#{student.name}", student_path(student) %> - <%= student.house.name %>
