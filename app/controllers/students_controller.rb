@@ -13,6 +13,14 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @house = House.all.sample
+    @student = @house.students.create!(student_params)
+    redirect_to student_path(@student)
+  end
+
+  private
+  def student_params
+    params.require(:student).permit(:name, :img_url)
   end
 
 end
